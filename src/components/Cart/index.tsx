@@ -63,8 +63,11 @@ export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTa
             <Item>
               <ProductContainer>
                 <Image
+                // source={{
+                //   uri: `http://192.168.100.179:3001/uploads/${cartItem.product.imagePath}`
+                // }}
                   source={{
-                    uri: `http://192.168.100.179:3001/uploads/${cartItem.product.imagePath}`
+                    uri: `https://waiterapp-api-bryanvck.onrender.com/uploads/${cartItem.product.imagePath}`
                   }}
                 />
                 <QuantityContainer>

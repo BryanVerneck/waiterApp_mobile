@@ -42,8 +42,11 @@ export function ProductModal({ visible, onClose, product, onAddToCart } : Produc
       onRequestClose={onClose}
     >
       <Image
+        // source={{
+        //   uri: `http://192.168.100.179:3001/uploads/${product.imagePath}`,
+        // }}
         source={{
-          uri: `http://192.168.100.179:3001/uploads/${product.imagePath}`,
+          uri: `https://waiterapp-api-bryanvck.onrender.com/uploads/${product.imagePath}`,
         }}
       >
         <CloseButton onPress={onClose}>

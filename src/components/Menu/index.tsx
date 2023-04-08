@@ -41,8 +41,11 @@ export function Menu({ onAddToCart, products } : MenuProps){
         renderItem={({ item: product }) => (
           <ProductContainer onPress={() => handleOpenModal(product)}>
             <ProductImage
+              // source={{
+              //   uri: `http://192.168.100.179:3001/uploads/${product.imagePath}`,
+              // }}
               source={{
-                uri: `http://192.168.100.179:3001/uploads/${product.imagePath}`,
+                uri: `https://waiterapp-api-bryanvck.onrender.com/uploads/${product.imagePath}`,
               }}
             />
 
